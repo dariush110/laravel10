@@ -187,6 +187,13 @@ return [
          */
 
         /*
+         * Modules Service Providers...
+         */
+
+        \Mlk\Home\Providers\HomeServiceProvider::class,
+
+
+        /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
