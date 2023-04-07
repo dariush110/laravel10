@@ -3,6 +3,6 @@
 use Illuminate\Support\Facades\Route;
 
 Route::group([], function ($router) {
-    Route::get('/', 'HomeController@index');
+    $router->get('/', ['uses' => 'HomeController@index', 'as' => 'home.index']);
 
 });

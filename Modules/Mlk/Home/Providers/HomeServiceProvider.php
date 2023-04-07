@@ -15,6 +15,10 @@ class HomeServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        //
+        config()->set('panelConfig.menus.home', [
+            'url'   => route('home.index'),
+            'title' => 'سایت اصلی',
+            'icon'  => 'home',
+        ]);
     }
 }

@@ -82,7 +82,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'fa',
 
     /*
     |--------------------------------------------------------------------------
@@ -191,6 +191,9 @@ return [
          */
 
         \Mlk\Home\Providers\HomeServiceProvider::class,
+        \Mlk\User\Providers\UserServiceProviders::class,
+        \Mlk\Auth\Providers\AuthServiceProviders::class,
+        \Mlk\Panel\Providers\PanelServiceProvider::class,
 
 
         /*
